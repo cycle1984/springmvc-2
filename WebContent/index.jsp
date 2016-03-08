@@ -31,5 +31,11 @@
 	<a href="${pageContext.request.contextPath}/emp/emps">employee列表</a>
 	<br><br>
 	<a href="${pageContext.request.contextPath}/testJson" id="testJson">测试json数据</a>
+	<br><br>
+	<form action="testFileUpload" method="post" enctype="multipart/form-data">
+		File: <input type="file" name="file"/>
+		Desc: <input type="text" name="desc"/>
+		<input type="submit" value="Submit"/>
+	</form>
 </body>
 </html>
